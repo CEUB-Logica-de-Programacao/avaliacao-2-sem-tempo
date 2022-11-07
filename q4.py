@@ -25,7 +25,27 @@
 # Dado um numeral romano, converta-o para um número inteiro.
 
 def q4(numeral):
-    pass
+    
+   y = {
+       "I": 1, 
+       "V": 5, 
+       "X": 10, 
+       "L": 50, 
+       "C": 100, 
+       "D": 500, 
+       "M": 1000
+       }
+    u = 0
+    z = 0
+    
+    for digito_rom in numeral[::-1]:             
+       valor_digito = y[digito_rom]
+       if valor_digito >= z:
+           u += valor_digito
+           z = valor_digito
+       else:
+           u -= valor_digito
+    return u
 
 
 if __name__ == '__main__':
