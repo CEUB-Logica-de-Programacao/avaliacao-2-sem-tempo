@@ -25,17 +25,22 @@
 # Dado um numeral romano, converta-o para um número inteiro.
 
 def q4(numeral):
-    num = [1, 4, 5, 9, 10, 40, 50, 90,100, 400, 500, 900, 1000]
-    sym = ["I", "IV", "V", "IX", "X", "XL","L", "XC", "C", "CD", "D", "CM", "M"]
-    i = 12
-    while number:
-        div = number // num[i]
-        number %= num[i]
-        while div:
-            print(sym[i], end = "")
-            div -= 1
-        i -= 1
-
+    valor = { "0": 0, "I":1 , "V":5, "X":10, "L":50,"C":100,"M":1000 }
+    acumulador_geral = 0 
+    anterior = "0"
+    parcial = 0 
+    for algarismo in cadeia:
+        if (algarismo == anterior):
+            parcial += valor[algarismo]
+        else:
+           if (valor[algarismo]>valor[anterior]):
+              acumulador_geral -= parcial
+           else:
+              acumulador_geral += parcial
+           parcial = valor[algarismo]
+           anterior = algarismo
+     acumulador_geral += parcial
+     return acumulador_geral
 
 
 if __name__ == '__main__':
