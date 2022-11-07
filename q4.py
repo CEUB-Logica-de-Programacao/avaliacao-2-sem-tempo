@@ -26,7 +26,6 @@
 
 def q4(numeral):
     # Escreva seu código aqui
-    
-
+    pass
 if __name__ == '__main__':
     print(q4('MCMXCIV'))  # 1994
