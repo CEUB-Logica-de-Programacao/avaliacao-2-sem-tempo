@@ -19,7 +19,18 @@
 
 def bonus(nums):
     # Escreva seu código aqui
-    pass
+    x = 0
+    y=str()
+    for i in nums:
+        x+=1
+        if int(i) >=10:
+            nums.insert(x,(int((str(i)[0]))))
+            nums.insert(x+1,(int((str(i)[1]))))
+            nums.remove(i)
+    lista = sorted(nums, reverse = True)
+    for i in lista:
+        y= y+str(i)
+    return y
 
 
 if __name__ == '__main__':
