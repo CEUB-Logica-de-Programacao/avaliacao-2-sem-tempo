@@ -21,18 +21,16 @@
 
 def q1(names, heights):
     # Escreva seu código aqui
-    def q1(names, heights):
-        dicionario = {}
-        y = []
-        for i in range(0,len(names)):
-            dicionario[heights[i]] = names[i]
+    dicionario = {}
+       y = []
+       for i in range(0,len(names)):
+          dicionario[heights[i]] = names[i]
+      heights2 = sorted(heights)
+      heights2 = list(reversed(heights2))
 
-        heights2 = sorted(heights)
-        heights2 = list(reversed(heights2))
-
-        for i in heights2:
-            y.append(dicionario[i])
-        return y
+       for i in heights2:
+           y.append(dicionario[i])
+       return y
 
 
 if __name__ == '__main__':
