@@ -26,17 +26,18 @@
 
 def q2(n):
     # Escreva seu código aqui
-    N = int(input())
-    PN=N-1+N-2
-    if PN == -1:
-        PN + 2
-        print(PN + 2)
-    elif PN == 1:
-        print(PN + 1)
-    else:
-        print(PN)
-    if N <= 5:
-        print()
+    n1 = 0
+    n2 = 1
+    contador = 0
+    lista = {'n':0}
+    while contador < n:
+        x = n1 + n2
+        n1 = n2 
+        n2 = x
+        contador += 1
+        lista.update({'n': x})
+    for v in lista.values():
+        return v
 
 
 if __name__ == '__main__':
