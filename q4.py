@@ -37,9 +37,9 @@ def q4(numeral):
               acumulador_geral -= parcial
            else:
               acumulador_geral += parcial
-           parcial = valor[algarismo]
-           anterior = algarismo
-     acumulador_geral += parcial
+              parcial = valor[algarismo]
+              anterior = algarismo
+              acumulador_geral += parcial
      return acumulador_geral
 
 
