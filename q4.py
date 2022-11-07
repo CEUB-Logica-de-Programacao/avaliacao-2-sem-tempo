@@ -25,22 +25,7 @@
 # Dado um numeral romano, converta-o para um número inteiro.
 
 def q4(numeral):
-    valor = { "0": 0, "I":1 , "V":5, "X":10, "L":50,"C":100,"M":1000 }
-    acumulador_geral = 0 
-    anterior = "0"
-    parcial = 0 
-    for algarismo in numeral:
-        if (algarismo == anterior):
-            parcial += valor[algarismo]
-        else:
-           if (valor[algarismo]>valor[anterior]):
-              acumulador_geral -= parcial
-           else:
-              acumulador_geral += parcial
-              parcial = valor[algarismo]
-              anterior = algarismo
-              acumulador_geral += parcial
-     return acumulador_geral
+    pass
 
 
 if __name__ == '__main__':
