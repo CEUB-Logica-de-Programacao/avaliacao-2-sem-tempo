@@ -21,7 +21,12 @@
 
 def q1(names, heights):
     # Escreva seu código aqui
-    pass
+    dict = {}
+    names = ["Mary","John","Emma"]
+    heights = [180,165,170]
+    for i in range(0,len(names)):
+        dict[names[i]] = heights[i]
+    return sorted(dict,key = None ,reverse = True)
 
 
 if __name__ == '__main__':
