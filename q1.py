@@ -40,8 +40,9 @@ def q1(names, heights):
             lista.append(k)
         for i in range(0,len(names)):
             if names[i]+"1" in lista:
+                lista.insert(x+1, names[i])
                 lista.remove(names[i]+"1")
-                lista.insert(x-1, names[i])
+                
         return lista
     return aaa()
 
