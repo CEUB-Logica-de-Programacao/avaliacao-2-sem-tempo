@@ -22,15 +22,15 @@
 # ```
 
 def q3(prices):
-    menor = min(prices)
-    indicemenor = prices.index(menor)
+    m = min(prices)
+    indicemenor = prices.index(m)
     del prices[0:indicemenor]
-    maior = max(prices)
-    indicedomaior = prices.index(maior)
-    if maior <= min(prices):
+    z = max(prices)
+    indicedomaior = prices.index(z)
+    if z <= min(prices):
         return 0
     else:
-        return maior - prices[0]
+        return z - prices[0]
 
 
 if __name__ == '__main__':
