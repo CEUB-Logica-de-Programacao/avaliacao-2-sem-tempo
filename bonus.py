@@ -19,18 +19,29 @@
 
 def bonus(nums):
     # Escreva seu código aqui
+    nums = [3,30,34,5,9]
     x = 0
     y=str()
     for i in nums:
         x+=1
         if int(i) >=10:
-            nums.insert(x,(int((str(i)[0]))))
-            nums.insert(x+1,(int((str(i)[1]))))
+            nums.insert(x,(float(i/10)))
             nums.remove(i)
+    x = 0
     lista = sorted(nums, reverse = True)
     for i in lista:
+        x+=1
+        if type(i) == float:
+            lista.update(x,(int(i*10)))
+    x = 0
+    for i in lista:
+        x+=1
+        if type(i) == float:
+            lista.update(i,(int(i))
+        print(lista)
+    for i in lista:
         y= y+str(i)
-    return y
+    print(lista,y)
 
 
 if __name__ == '__main__':
