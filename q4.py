@@ -35,17 +35,17 @@ def q4(numeral):
        "D": 500, 
        "M": 1000
        }
-    u = 0
+    x = 0
     z = 0
     
     for digito_rom in numeral[::-1]:             
        valor_digito = y[digito_rom]
        if valor_digito >= z:
-           u += valor_digito
+           x += valor_digito
            z = valor_digito
        else:
-           u -= valor_digito
-    return u
+           x -= valor_digito
+    return x
 
 
 if __name__ == '__main__':
