@@ -41,7 +41,8 @@ def bonus(nums):
             lista.remove(i)
     for i in lista:
         y= y+str(i)
-    return int(y)
+    y = int(y)
+    return str(y)
 
 
 if __name__ == '__main__':
