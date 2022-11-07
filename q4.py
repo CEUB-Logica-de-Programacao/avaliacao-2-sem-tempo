@@ -29,7 +29,7 @@ def q4(numeral):
     acumulador_geral = 0 
     anterior = "0"
     parcial = 0 
-    for algarismo in cadeia:
+    for algarismo in numeral:
         if (algarismo == anterior):
             parcial += valor[algarismo]
         else:
