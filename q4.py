@@ -26,26 +26,26 @@
 
 def q4(numeral):
     
-   y = {
-       "I": 1, 
-       "V": 5, 
-       "X": 10, 
-       "L": 50, 
-       "C": 100, 
-       "D": 500, 
-       "M": 1000
-       }
-    x = 0
+    y = {
+           "I": 1, 
+           "V": 5, 
+           "X": 10, 
+           "L": 50, 
+           "C": 100, 
+           "D": 500, 
+           "M": 1000
+           }
+    u = 0
     z = 0
-    
+
     for digito_rom in numeral[::-1]:             
        valor_digito = y[digito_rom]
        if valor_digito >= z:
-           x += valor_digito
+           u += valor_digito
            z = valor_digito
        else:
-           x -= valor_digito
-    return x
+           u -= valor_digito
+    return u
 
 
 if __name__ == '__main__':
