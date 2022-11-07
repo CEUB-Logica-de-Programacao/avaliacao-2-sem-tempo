@@ -24,7 +24,7 @@ def q1(names, heights):
     dict = {}
     lista1 = []
     for i in range(0,len(names)):
-        if names[i] in dict:
+        if names[i] in dict and x = None:
             dict[names[i]+'1'] = heights[i]
             x = i
         dict[names[i]] = heights[i]
@@ -42,7 +42,6 @@ def q1(names, heights):
             if names[i]+"1" in lista:
                 lista.insert(x-2, names[i])
                 lista.remove(names[i]+"1")
-                
         return lista
     return aaa()
 
