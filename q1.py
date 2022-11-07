@@ -22,20 +22,28 @@
 def q1(names, heights):
     # Escreva seu código aqui
     dict = {}
+lista1 = []
+for i in range(0,len(names)):
+    if names[i] in dict:
+        dict[names[i]+'1'] = heights[i]
+        x = i
+    dict[names[i]] = heights[i]
+def aaa():
+    dict1 = {}
+    lista = []
+    dict2 = sorted(dict.values(), reverse= True)
+    for i in dict2:
+        for k in dict.keys():
+            if dict[k] == i:
+                dict1[k] = dict[k]
+    for k in dict1.keys():
+        lista.append(k)
     for i in range(0,len(names)):
-        dict[names[i]] = heights[i]
-    def aaa():
-        dict1 = {}
-        lista = []
-        dict2 = sorted(dict.values(), reverse= True)
-        for i in dict2:
-            for k in dict.keys():
-                if dict[k] == i:
-                    dict1[k] = dict[k]
-        for k in dict1.keys():
-            lista.append(k)
-        return lista
-    return aaa()
+        if names[i]+"1" in lista:
+            lista.remove(names[i]+"1")
+            lista.insert(x-1, names[i])
+    return lista
+return aaa()
 
 
 if __name__ == '__main__':
