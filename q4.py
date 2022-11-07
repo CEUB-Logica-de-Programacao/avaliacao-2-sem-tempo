@@ -25,33 +25,16 @@
 # Dado um numeral romano, converta-o para um número inteiro.
 
 def q4(numeral):
-    # Escreva seu código aqui
-    numeral = 'MCMXCIV' #1994
-    valores = {'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}
-    lista = []
-    soma = 0
-    def valor(aa):
-        for k, v in valores.items():
-            if aa == k:
-                return v
-    for i in numeral:
-        lista.append(i)
-    for n in lista:
-            soma = soma+valor(n)
-    for n in lista:
-        if n == "I" and n+1 == "V":
-            soma = soma-1
-        elif n == "I" and n+1 == "X":
-            soma = soma-1
-        elif n == "X" and n+1 == "L":
-            soma = soma-10 
-        elif n == "X" and n+1 == "C":
-            soma = soma-10    
-        elif n == "C" and n+1 == "D":
-            soma = soma-100
-        elif n == "C" and n+1 == "M":
-            soma = soma-100
-    print(soma)
+    num = [1, 4, 5, 9, 10, 40, 50, 90,100, 400, 500, 900, 1000]
+    sym = ["I", "IV", "V", "IX", "X", "XL","L", "XC", "C", "CD", "D", "CM", "M"]
+    z = 12
+    while number:
+        div = number // num[z]
+        number %= num[z]
+        while div:
+            print(sym[z], end = "")
+            div -= 1
+        z -= 1
 
 
 
