@@ -21,10 +21,21 @@
 
 def q1(names, heights):
     # Escreva seu código aqui
-    dict = {}
-    for i in range(0,len(names)):
-        dict[names[i]] = heights[i]
-    return sorted(dict,key = None ,reverse = True)
+dict = {}
+for i in range(0,len(names)):
+    dict[names[i]] = heights[i]
+def aaa():
+    dict1 = {}
+    lista = []
+    dict2 = sorted(dict.values(), reverse= True)
+    for i in dict2:
+        for k in dict.keys():
+            if dict[k] == i:
+                dict1[k] = dict[k]
+    for k in dict1.keys():
+        lista.append(k)
+    return lista
+return aaa()
 
 
 if __name__ == '__main__':
