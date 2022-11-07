@@ -26,16 +26,7 @@
 
 def q4(numeral):
     # Escreva seu código aqui
-    valores = {I:'1',V:'5',X:'10',L:'50',C:'100',D:'500',M:'1000'}
-    lista = []
-    def valor(aa):
-        for k, v in valores.items():
-            if aa == k:
-                return v
-    for i in numeral:
-        lista.append(i)
-    for i in lista:
-        soma = soma+valor(i)
+    pass
 
 
 
