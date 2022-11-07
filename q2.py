@@ -26,7 +26,17 @@
 
 def q2(n):
     # Escreva seu código aqui
-    pass
+    N = int(input())
+    PN=N-1+N-2
+    if PN == -1:
+        PN + 2
+        print(PN + 2)
+    elif PN == 1:
+        print(PN + 1)
+    else:
+        print(PN)
+    if N <= 5:
+        print()
 
 
 if __name__ == '__main__':
